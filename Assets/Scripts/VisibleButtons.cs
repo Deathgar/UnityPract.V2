@@ -4,20 +4,23 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class VisibleButtons : MonoBehaviour {
-    public Button first;
-    public Button second;
-    public Button third;
+    public Button firstDef;
+    public Button secondDef;
+    public Button thirdDef;
 
     private void Start()
     {
-        first.gameObject.active = false;
-        second.gameObject.active = false;
-        third.gameObject.active = false;
+        firstDef.gameObject.active = false;
+        secondDef.gameObject.active = false;
+        thirdDef.gameObject.active = false;
+
+
+
     }
 
     public void Change()
     {
-        if(!first.gameObject.active)
+        if(!firstDef.gameObject.active)
         {
             Enable();
         }
@@ -29,15 +32,18 @@ public class VisibleButtons : MonoBehaviour {
 
     private void Enable()
     {
-        first.gameObject.active = true;
-        second.gameObject.active = true;
-        third.gameObject.active = true;
+        firstDef.gameObject.active = true;
+        secondDef.gameObject.active = true;
+        thirdDef.gameObject.active = true;
+
     }
 
     private void Disable()
     {
-        first.gameObject.active = false;
-        second.gameObject.active = false;
-        third.gameObject.active = false;
+        firstDef.gameObject.active = false;
+        secondDef.gameObject.active = false;
+        thirdDef.gameObject.active = false;
+
     }
+
 }
