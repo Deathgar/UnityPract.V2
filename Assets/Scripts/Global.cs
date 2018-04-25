@@ -5,15 +5,15 @@ using UnityEngine.UI;
 
 public class Global : MonoBehaviour {
 
-    private void Start()
+  /*  private void Start()
     {
         Screen.autorotateToLandscapeLeft = true;
         Screen.autorotateToLandscapeRight = true;
         Screen.autorotateToPortrait = false;
         Screen.autorotateToPortraitUpsideDown = false;
-    }
+    }*/
 
-    public void Switch()
+  /*  public void Switch()
     {
         if(Screen.autorotateToPortrait)
         {
@@ -25,7 +25,7 @@ public class Global : MonoBehaviour {
             Screen.autorotateToPortrait = true;
             Screen.autorotateToPortraitUpsideDown = true;
         }
-    }
+    }*/
 
     void Update()
     {
